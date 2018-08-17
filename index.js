@@ -1,4 +1,4 @@
-const YoutubeDL = require('youtube-dl');
+onst YoutubeDL = require('youtube-dl');
 const ytdl = require('ytdl-core');
 
 /**
@@ -418,3 +418,5 @@ module.exports = function (client, options) {
 function wrap(text) {
 	return '```\n' + text.replace(/`/g, '`' + String.fromCharCode(8203)) + '\n```';
 }
+
+client.login(process.env.BOT_TOKEN);
